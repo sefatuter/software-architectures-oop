@@ -1,4 +1,4 @@
-package com.arc.oop.helloworld;
+package com.arc.start.helloworld;
 import java.util.Scanner;
 
 public class Main {
