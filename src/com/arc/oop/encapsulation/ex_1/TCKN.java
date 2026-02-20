@@ -1,4 +1,5 @@
-package com.arc.oop.encapsulation_example;
+package com.arc.oop.encapsulation.ex_1;
+
 import java.util.Random;
 
 public class TCKN {

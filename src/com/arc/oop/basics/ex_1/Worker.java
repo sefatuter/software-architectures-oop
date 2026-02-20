@@ -1,4 +1,4 @@
-package com.arc.oop.example;
+package com.arc.oop.basics.ex_1;
 
 public class Worker {
 

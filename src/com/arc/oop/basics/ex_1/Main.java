@@ -1,4 +1,4 @@
-package com.arc.oop.example;
+package com.arc.oop.basics.ex_1;
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ public class Main {
         double salary = scanner.nextDouble();
         System.out.println("--------------------------------------------");
 
-        Worker worker = new Worker(no, name, lastName, experience, salary);
+        com.arc.oop.basics.ex_1.Worker worker = new Worker(no, name, lastName, experience, salary);
 
         while (true) {
             String operations = "1- Show worker information\n" + "2- Raise salary\n" + "3- Reset computer\n" + "4- Exit";
@@ -72,3 +72,4 @@ public class Main {
 
     }
 }
+

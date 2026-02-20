@@ -1,6 +1,8 @@
-package com.arc.oop.encapsulation_example;
+package com.arc.oop.encapsulation.ex_1;
 
 //  import java.util.Random;
+import com.arc.oop.encapsulation.ex_1.TCKN;
+
 import java.util.Scanner;
 
 public class Main {
