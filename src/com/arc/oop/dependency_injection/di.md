@@ -128,10 +128,10 @@ public class Main {
 
 ## Summary of Benefits
 
-| Feature | Without DI (Bad) | With DI (Good) |
-| :--- | :--- | :--- |
-| **Coupling** | **Tight:** Classes are glued together. | **Loose:** Classes are independent. |
-| **Flexibility** | Low: Must change code to swap parts. | High: Swap parts via configuration/Main. |
-| **Testing** | Hard: Cannot test separately. | Easy: Can inject "Fake/Mock" objects for testing. |
-| **Maintenance** | High Risk: Changing one class breaks others. | Low Risk: Changes are isolated. |
+| Feature         | Without DI (Bad)                             | With DI (Good)                                    |
+|:----------------|:---------------------------------------------|:--------------------------------------------------|
+| **Coupling**    | **Tight:** Classes are glued together.       | **Loose:** Classes are independent.               |
+| **Flexibility** | Low: Must change code to swap parts.         | High: Swap parts via configuration/Main.          |
+| **Testing**     | Hard: Cannot test separately.                | Easy: Can inject "Fake/Mock" objects for testing. |
+| **Maintenance** | High Risk: Changing one class breaks others. | Low Risk: Changes are isolated.                   |
 

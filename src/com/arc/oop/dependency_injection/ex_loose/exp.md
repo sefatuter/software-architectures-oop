@@ -21,6 +21,14 @@ GraphicsCard nvidiaCard ...
 
 > **Analogy:** Think of this as a standard **USB Port**. It doesn't care what brand of device you plug in; it only knows the standard USB protocols.
 
+We created an object that runs as NvidiaGpu in the background, while ensuring it has the method blueprints in the interface.
+"Interface'deki metot blueprint'lerine sahip olduğunu garanti ettiğimiz, ancak arka planda NvidiaGpu olarak çalışan bir obje oluşturduk."
+
+```java
+nvidiaCard.render(); // IT WILL WORK (Because Interface has this method)
+nvidiaCard.nvidiaExtraFeature(); // IT WILL GIVE AN ERROR! (The compiler cannot see this)
+```
+
 ---
 
 ## 2. The Right Side: The Object (The Implementation)
