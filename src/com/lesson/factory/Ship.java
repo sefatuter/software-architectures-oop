@@ -1,4 +1,4 @@
-package com.lesson.functions;
+package com.lesson.factory;
 
 public class Ship implements ITransport {
     @Override
