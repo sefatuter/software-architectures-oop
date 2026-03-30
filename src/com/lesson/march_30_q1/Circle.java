@@ -1,7 +1,8 @@
 package com.lesson.march_30_q1;
 
-public class Circle extends Shape{
-    public Circle(Color color) : base(color, "circle"){
-
+// 2. Alt Sınıflar (C#'taki : base() yerine Java'da super() kullanılır)
+public class Circle extends Shape {
+    public Circle(Color color) {
+        super(color, "Circle");
     }
 }

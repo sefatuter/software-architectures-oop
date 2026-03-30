@@ -1,19 +1,18 @@
 package com.lesson.composite;
 
+// Bütün çalışanların uymak zorunda olduğu şablon (Component)
 public abstract class Developer {
-    /*
-    protected string _name;
-    protected SoftwareDeveloperType _type;
+    protected String name;
+    protected DeveloperType type;
 
-    protected Developer(string name, SoftwareDeveloperType type)
-    {
-        _name = name;
-        _type = type;
+    public Developer(String name, DeveloperType type) {
+        this.name = name;
+        this.type = type;
     }
 
-    public abstract void AddDeveloper(Developer developer);
-    public abstract void RemoveDeveloper(Developer developer);
-    public abstract void Print();
-    */
+    // Ortak metotlar
+    public abstract void addDeveloper(Developer developer);
+    public abstract void removeDeveloper(Developer developer);
+    public abstract void print();
 }
 

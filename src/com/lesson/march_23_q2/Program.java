@@ -3,30 +3,32 @@ package com.lesson.march_23_q2;
 public class Program
 {
     public static void main(String[] args){
-    /*
+
         Person ins1 = new Person();
 
-        ins1.SetName("Naim");
-        ins1.SetSurame("Ölçer");
-        ins1.SetAge(40);
+        ins1.setName("Naim");
+        ins1.setSurname("Ölçer");
+        ins1.setAge(40);
 
-        Person ins2 = ins1.Clone();
+        // İŞTE PROTOTYPE PATTERN!
+        // "new Person()" demek yerine, var olanı kopyaladık (Clone).
+        Person ins2 = ins1.clone();
 
-        Console.WriteLine("Instance 1");
-        ins1.Print();
+        System.out.println("Instance 1:");
+        ins1.print(); // Naim Ölçer 40
 
-        Console.WriteLine("Instance 2");
-        ins2.Print();
+        System.out.println("Instance 2:");
+        ins2.print(); // Naim Ölçer 40
 
-        ins1.SetAge(42);
-        ins1.SetName("Naim1");
-        ins1.SetSurame("Ölçer2");
+        // İkinci nesneyi kopyaladıktan sonra BİRİNCİYİ değiştirelim
+        ins1.setAge(42);
+        ins1.setName("Naim1");
+        ins1.setSurname("Ölçer2");
 
-        Console.WriteLine("Instance 1 After Change");
-        ins1.Print();
+        System.out.println("\nInstance 1 After Change:");
+        ins1.print(); // Naim1 Ölçer2 42
 
-        Console.WriteLine("Instance 2 After Change");
-        ins2.Print();
-    */
+        System.out.println("Instance 2 After Change:");
+        ins2.print(); // Naim Ölçer 40 (ETKİLENMEDİ!)
     }
 }

@@ -1,55 +1,28 @@
 package com.lesson.march_23_q2;
-// prototype pattern
-public class Person
-{
-/*
 
-    private string name;
-    private string surname;
-    private int citno;
+// 1. KURAL: Sınıf "Cloneable" arayüzünü implement etmelidir!
+public class Person implements Cloneable {
+    private String name;
+    private String surname;
     private int age;
-    private string phone;
-    private string address;
-    private DateTime birthdate;
 
-    public Person Clone()
-    {
-        return (Person)this.MemberwiseClone();
-    }
-    public void SetName(string nameInput)
-    {
-        name = nameInput;
-    }
-    public void SetSurame(string surnameInput)
-    {
-        surname = surnameInput;
-    }
-    public void SetAddress(string adresInput)
-    {
-        address = adresInput;
-    }
-    public void SetPhone(string phoneInput)
-    {
-        phone = phoneInput;
-    }
-    public void SetCitNo(int citnoInput)
-    {
-        citno = citnoInput;
-    }
-    public void SetAge(int ageInput)
-    {
-        age = ageInput;
+    // Setter Metotları
+    public void setName(String name) { this.name = name; }
+    public void setSurname(String surname) { this.surname = surname; }
+    public void setAge(int age) { this.age = age; }
+
+    public void print() {
+        System.out.printf("Name: %s, Surname: %s, Age: %d %n", name, surname, age);
     }
 
-    public void SetBirthdate(DateTime birthInput)
-    {
-        birthdate = birthInput;
+    // 2. KURAL: clone() metodunu Override (Ezmek)
+    @Override
+    public Person clone() {
+        try {
+            // super.clone() var olan nesnenin birebir kopyasını oluşturur.
+            return (Person) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
     }
-
-    public void Print()
-    {
-        Console.WriteLine("Name: {0:s}, Surname: {1:s}, Age: {2:d} ", name, surname, age);
-    }
-}
-*/
 }

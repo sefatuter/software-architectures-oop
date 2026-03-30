@@ -11,5 +11,7 @@ public class Main {
 
         System.out.println(araba.model);  // Audi
         System.out.println(araba2.model); // Audi
+
+        //Önceden yazılmış bir makaleden birkaç cümleyi değiştirerek yeni bir tane oluşturmak
     }
 }

@@ -1,15 +1,20 @@
 package com.lesson.march_30_q1;
 
+// 1. Soyut Sınıf (İçinde Köprüyü barındırır)
 public abstract class Shape {
-    public String Type{get; set;}
-    public Color color{get; set;}
+    protected String type;
 
-    public Shape(Color color, String type){
-        Color = color;
-        Type = type;
+    // İŞTE KÖPRÜ (BRIDGE) BURASI! (Defterindeki -> oku)
+    protected Color color;
+
+    // Constructor Injection ile köprüyü bağlıyoruz
+    public Shape(Color color, String type) {
+        this.color = color;
+        this.type = type;
     }
 
-    public override string ToString(){
-        return $'I am a {Color.log()} {Type}';
+    @Override
+    public String toString() {
+        return "I am a " + color.log() + " " + type;
     }
 }
