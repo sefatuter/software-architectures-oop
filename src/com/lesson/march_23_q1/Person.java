@@ -1,67 +1,27 @@
 package com.lesson.march_23_q1;
 // builder pattern
 public class Person {
-/*
-builder'siz:
+    private String name, surname, phone, address;
+    private int age;
 
-    public string name{get; set;}
-    public string surname{get; set;}
-    public int citNo{get; set;}
-    public int age{get; set;}
-    public string phone{get; set;}
-    public string address{get; set;}
+    // 1. Private Constructor: Nesne sadece Builder ile üretilebilir!
+    private Person(Builder builder) {
+        this.name = builder.name;
+        this.surname = builder.surname;
+        this.age = builder.age;
+    }
 
-    public void print(){
+    // 2. Static İç Sınıf (Builder)
+    public static class Builder {
+        private String name, surname, phone, address;
+        private int age;
 
-    console.writeln("name is" + name);
-    console.writeln("surname is" + surname);
-    console.writeln("cit no is" + citNo);
-    console.writeln("age is" + age);
-    console.writeln("phone is" + phone);
-    console.writeln("address is" + address);
+        public Builder setName(String name) { this.name = name; return this; }
+        public Builder setSurname(String surname) { this.surname = surname; return this; }
+        public Builder setAge(int age) { this.age = age; return this; }
 
-*/
-/*
-
-public class PersonBuilder
-    {
-        private Person _person = new Person();
-
-        public PersonBuilder SetName(string nameinput)
-        {
-            _person.name = nameinput;
-            return this;
+        public Person build() {
+            return new Person(this); // Person nesnesini Builder'dan alarak üret
         }
-        public PersonBuilder SetSurname(string surnameinput)
-        {
-            _person.surname = surnameinput;
-            return this;
-        }
-        public PersonBuilder SetCitNo(string citnoinput)
-        {
-            _person.citno = citnoinput;
-            return this;
-        }
-        public PersonBuilder SetAge(int ageinput)
-        {
-            _person.age = ageinput;
-            return this;
-        }
-        public PersonBuilder SetPhone(int phoneinput)
-        {
-            _person.phone = phoneinput;
-            return this;
-        }
-        public PersonBuilder SetAddress(string adressinput)
-        {
-            _person.addresss = adressinput;
-            return this;
-        }
-
-        public Person Build()
-        {
-            return _person;
-        }
- */
-
+    }
 }
