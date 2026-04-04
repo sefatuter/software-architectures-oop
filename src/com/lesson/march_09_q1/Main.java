@@ -7,19 +7,20 @@ public class Main {
         /*
         verilen sayının basamaklarının kaç tanesi tam bölen ise o kadar sayısı return edin
          */
-        int num = 500;
-        int digit;
+        int num = 121;
         int count = 0;
-        int tmp = num;
-        for(int i = 0; i < num; i++) {
+        int digit;
+        int temp = num;
+
+        while(num > 0) {
             digit = num % 10;
-            if(num % digit == 0) {
+            if (digit != 0 && temp % digit == 0){
                 count++;
             }
             num = num / 10;
         }
         for (int j = 0; j < count; j++){
-            System.out.print(tmp);
+            System.out.print(temp);
             System.out.print(" ");
         }
     }
