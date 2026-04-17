@@ -10,7 +10,17 @@ Kurallar:
     4. Uygulamayı kodlayan geliştirici (Main sınıfı), ekrana bir buton veya onay kutusu eklemek istediğinde her seferinde if (os == "Windows") { new WinButon(); } else { new MacButon(); } gibi amele if-else blokları yazmak KESİNLİKLE istemiyor.
     5. EN ÖNEMLİ KURAL: Sistemde yanlışlıkla bir WinButon ile MacOnayKutusu'nun aynı ekranda (çapraz ve uyumsuz şekilde) üretilme ihtimali tamamen ortadan kaldırılmalıdır. Ürünler her zaman kendi işletim sistemi "ailesiyle" (family) birlikte, bir takım halinde üretilmelidir.
 
-bridge pattern?
+Item interface
+Button class implement Item
+Checkbox class implements Item
+
+AbstractFactory class
+
+FactoryProducer class
+
+Windows Class extends AbstractFactory
+Macos Class extends AbstractFactory
+
  */
 
 public class Main {
