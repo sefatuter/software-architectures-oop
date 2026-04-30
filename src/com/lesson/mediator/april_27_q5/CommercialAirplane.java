@@ -1,4 +1,4 @@
-package com.lesson.mediator;
+package com.lesson.mediator.april_27_q5;
 
 public class CommercialAirplane implements Airplane{
     private AirTraficControlTower mediator;

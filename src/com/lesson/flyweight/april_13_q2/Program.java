@@ -5,9 +5,11 @@ public class Program {
 
         FontFactory fontFactory = new FontFactory();
 
+        // 1. "Arial" fontu ilk kez istendiği için YENİ NESNE ÜRETİLİR.
         IFont font1 = fontFactory.getFont("Arial");
         IFont font2 = fontFactory.getFont("Times New Roman");
         IFont font3 = fontFactory.getFont("Deneme Font");
+
 
         font1.setColor("Red");
         font1.setSize(12);

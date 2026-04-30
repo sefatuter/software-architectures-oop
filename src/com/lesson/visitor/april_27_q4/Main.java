@@ -1,4 +1,4 @@
-package com.lesson.visitor;
+package com.lesson.visitor.april_27_q4;
 
 public class Main {
     public static void main(String[] args) {

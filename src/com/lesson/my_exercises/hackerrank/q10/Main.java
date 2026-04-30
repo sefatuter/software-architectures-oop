@@ -19,11 +19,11 @@ public class Main {
 
         int tmp = 0;
 
-        while(num > 0){
+        while (num > 0){
             tmp *= 10;
             int digit = num % 10;
             tmp += digit;
-            num = num / 10;
+            num /= 10;
         }
 
         return tmp;

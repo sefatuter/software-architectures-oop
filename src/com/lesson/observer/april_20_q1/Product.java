@@ -5,24 +5,24 @@ import java.util.List;
 
 public class Product {
 
-    List<Observer> _observers = new ArrayList<>(); // FIX
+    private List<Observer> observers = new ArrayList<>();
 
-    public void Attach(Observer observer){
-        _observers.add(observer);
+    public void attach(Observer observer) {
+        observers.add(observer);
     }
 
-    public void detach(Observer observer){
-        _observers.remove(observer);
+    public void detach(Observer observer) {
+        observers.remove(observer);
     }
 
-    public void Notify(){
-        for (Observer o : _observers) { // daha temiz
-            o.update("Stock changed!"); // FIX
+    public void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update("Stock changed!");
         }
     }
 
-    public void changeStock(){
+    public void changeStock() {
         // stock change process
-        this.Notify();
+        notifyObservers();
     }
 }

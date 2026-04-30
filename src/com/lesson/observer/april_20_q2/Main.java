@@ -11,11 +11,11 @@ public class Main {
         ConcreteObserverB observerB = new ConcreteObserverB();
         subject.attach(observerB);
 
-        subject.SomeBusinessLogic();
-        subject.SomeBusinessLogic();
+        subject.someBusinessLogic();
+        subject.someBusinessLogic();
 
         subject.detach(observerB);
 
-        subject.SomeBusinessLogic();
+        subject.someBusinessLogic();
     }
 }

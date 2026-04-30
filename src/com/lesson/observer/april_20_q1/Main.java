@@ -4,7 +4,11 @@ public class Main {
     public static void main(String[] args) {
         Product product = new Product();
 
-        product.Attach(new CustomerObserver("Ali")); // FIX
+        Observer ali = new CustomerObserver("Ali");
+        Observer ayse = new CustomerObserver("Ayşe");
+
+        product.attach(ali);
+        product.attach(ayse);
 
         product.changeStock();
     }
