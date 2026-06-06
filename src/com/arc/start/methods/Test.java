@@ -67,7 +67,7 @@ public class Test {
 
 
         Scanner x = new Scanner(System.in);
-        System.out.print("Customer number: ");
+        System.out.print("Subscriber number: ");
         int y = Integer.valueOf(x.nextLine());
 
         if (y % 2000 == 0) {

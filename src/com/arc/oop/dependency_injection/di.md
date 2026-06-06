@@ -106,14 +106,14 @@ The `Main` class (or a Framework like Spring) acts as the **Assembler**. It deci
 public class Main {
     public static void main(String[] args) {
         
-        // Scenario 1: Customer wants an Nvidia Computer
+        // Scenario 1: Subscriber wants an Nvidia Computer
         GraphicsCard nvidiaPart = new NvidiaGpu();          // Create the part
         Computer gamingPc = new Computer(nvidiaPart);       // Inject the part
         gamingPc.playGame(); 
         // Output: Rendering graphics with Nvidia GPU...
 
 
-        // Scenario 2: Customer wants an AMD Computer
+        // Scenario 2: Subscriber wants an AMD Computer
         GraphicsCard amdPart = new AmdGpu();                // Create the part
         Computer officePc = new Computer(amdPart);          // Inject the part
         officePc.playGame(); 
