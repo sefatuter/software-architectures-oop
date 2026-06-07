@@ -1,6 +1,5 @@
 package com.lesson.proxy.april_13_q1;
 
-import java.util.jar.JarOutputStream;
 
 public class Proxy implements ISubject{
 

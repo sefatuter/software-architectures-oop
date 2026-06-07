@@ -11,10 +11,32 @@ public class Main {
         String input = "07:05:45PM";
 
         String hour = input.substring(0,2);
-        String minute = input.substring(3,5);
-        String second = input.substring(6,8);
+        String minute_second = input.substring(2,8);
 
-        System.out.println(hour + " " + minute + " " + second);
+        String period = input.substring(8,10);
+        String result = "";
 
+        int tmpHour = Integer.parseInt(hour);
+
+        if(period.equals("PM")){
+            if (tmpHour == 12){
+                result += hour+minute_second;
+            } else {
+                tmpHour+=12;
+                hour = String.format("%02d", tmpHour);
+                result = hour + minute_second;
+            }
+        } else {
+            if (tmpHour == 12){
+                tmpHour-=12;
+                hour = String.format("%02d", tmpHour);
+                result = hour + minute_second;
+            } else {
+                result = hour + minute_second;
+            }
+        }
+
+        System.out.println(result);
     }
+
 }

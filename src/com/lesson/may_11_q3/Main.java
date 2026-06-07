@@ -12,13 +12,13 @@ ve (ar[i] + ar[j]) toplamı k'ya tam bölünsün. bu şekilde kaç çift vardır
  */
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Integer> ar = new ArrayList<>();
-//            1,3,2,6,1,2
 
+        List<Integer> ar = new ArrayList<>(Arrays.asList(1, 3, 2, 6, 1, 2));
         int count = 0;
         int k = 3;
 
@@ -26,11 +26,30 @@ public class Main {
             int firstNum = ar.get(i);
             for (int j = 1; j < ar.size(); j++) {
                 int secNum = ar.get(j);
-
-                if(i<j && (ar.get(i) + ar.get(j) % k == 0)){
+                if (i<j && (firstNum+secNum) % k == 0){
                     count++;
                 }
             }
         }
+        System.out.println(count);
     }
 }
+
+        //        List<Integer> ar = new ArrayList<>();
+////            1,3,2,6,1,2
+//
+//        int count = 0;
+//        int k = 3;
+//
+//        for (int i = 0; i < ar.size(); i++) {
+//            int firstNum = ar.get(i);
+//            for (int j = 1; j < ar.size(); j++) {
+//                int secNum = ar.get(j);
+//
+//                if(i<j && (ar.get(i) + ar.get(j) % k == 0)){
+//                    count++;
+//                }
+//            }
+//        }
+//    }
+//}
